@@ -8,6 +8,7 @@ div#title h2{
   color: white;
   /*! display: flex; */
   /*! flex-wrap: wrap; */
+  transition: 1s;
 }
 div#title h2 span{
   animation-name: titleup;
@@ -33,7 +34,7 @@ div#title h2 span.s2{
   opacity: 0;
 } 
 div#title div.wrap{
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   height: 100%;

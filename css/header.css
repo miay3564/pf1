@@ -15,11 +15,12 @@ header {
   }
 }
 header nav {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   height: 130px;
+  transition: 1s;
 }
 header nav h1 {
   display: flex;
@@ -29,18 +30,18 @@ header nav h1 {
 header nav h1 a::before{
   content:"";
   background-image: url(../img/ylogo.png);
-  width: 60px;
-  height: 50px;
+  width: 50px;
+  height: 26px;
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  vertical-align: -15px;
+  vertical-align: -6px;
   background-size: contain;
   margin-right: 10px;
 }
 header nav h1 a {
   color: white;
-  font-size: 28px;
+  font-size: 21px;
   font-weight: bold;
   transition: 1s;
 }

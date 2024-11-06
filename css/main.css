@@ -111,8 +111,7 @@ main{
 }
 /* 인포메이션 */
 #information{
-  
-  height: 100vh;
+/*   height: 100vh; */
 }
 #information div.wrap{
   height: 100%;
