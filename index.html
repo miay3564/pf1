@@ -16,6 +16,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> 
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- 타이틀 slick -->
+    <script>
+        $(document).ready(function(){
+            //ul.sub 숨기기
+            $("header nav > ul > li ul.sub").hide();
+            //li에 마우스를 올리면 실행하시오
+            $("header nav > ul > li").hover(
+                function(){ //마우스를 올린 li의 ul.sub를 fadeIn() 하시오
+                    // $("header nav > ul.gnb > li ul.sub").fadeIn();//
+                    // $("this") : 이벤트(마우스오버)가 발생한 대상. children : this의 아래 항목.
+                    $(this).children("ul").stop(true, true).fadeIn();
+                },
+                function(){ //마우스가 빠져나가는 행위 stop : 지나갈 때도 발생하는 걸 막기 위함. 마우스가 멈춰있을 때 적용.
+                    $(this).children("ul").stop(true, true).fadeOut();
+                }
+            );
+        });
+    </script>
 </head>
 <body>
     <!-- 상단영역 -->
@@ -249,7 +274,7 @@
             </ul>
             <address class="h6T">
                 <span>대표이사 김진국</span>서울특별시 중구 수표로 31, 노랑풍선빌딩<br>
-                <span>사업자등록번호 104-81-64440</span>관광사업자등록증번호 제2006-000003호<span>통신판매업신고번호 제2008-서울중구-0278</span>관광사업자등록증번호 제2006-000003호<span>통신판매업신고번호 제2008-서울중구-0278</span>사업자 정보확인<br>
+                <span>사업자등록번호 104-81-64440</span>관광사업자등록증번호 제2006-000003호<span>통신판매업신고번호 제2008-서울중구-0278</span>관광사업자등록증번호 제2006-000003호<span>통신판매업신고번호 제2008-서울중구-0278</span><strong>사업자 정보확인</strong><br>
                 <span>[부산지사] 부산광역시 부산진구 중앙대로668, 9층 912호 (부전동, 에이원프라자)</span>사업자등록번호 870-85-01900
             </address>
             <ul class="email h6T">
@@ -258,7 +283,7 @@
                 <li>판매제휴<a href="" class="block"> salespartner@ybtour.com</a></li>
                 <li>대리점문의<a href="" class="block"> sales.agent@ybtour.co.kr</a></li>
             </ul>
-            <p class="money h6T">영업배상책임보험가입 총 20억원 · 한국관광협회중앙회 여행공제회 공제영업보증가입 10억원 · 공제기획여행보증가입 5억원</p>
+            <p class="money h6T"><span>영업배상책임보험가입 총 20억원 ·</span><span>한국관광협회중앙회 여행공제회 공제영업보증가입 10억원 ·</span><span>공제기획여행보증가입 5억원</span></p>
             <ul class="award">
                 <li><a href="" class="block">소비자중심경영 공정거래위원회 한국소비자원</a></li>
                 <li><a href="" class="block">소비자중심경영 국무총리 표창</a></li>
